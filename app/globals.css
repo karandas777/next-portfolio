@@ -9,3 +9,7 @@
 .dark {
   color-scheme: dark;
 }
+
+body {
+  font-family: var(--font-google);
+}

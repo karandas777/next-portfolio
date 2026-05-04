@@ -3,20 +3,30 @@ import { cookies } from "next/headers";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const montserratFont = localFont({
+const googleFont = localFont({
   src: [
     {
-      path: "../public/portfolio/fonts/Montserrat-Regular.ttf",
+      path: "../public/portfolio/fonts/GoogleSans-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../public/portfolio/fonts/Montserrat-Bold.ttf",
+      path: "../public/portfolio/fonts/GoogleSans-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/portfolio/fonts/GoogleSans-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/portfolio/fonts/GoogleSans-Bold.ttf",
       weight: "700",
       style: "normal",
     },
   ],
-  variable: "--font-montserrat",
+  variable: "--font-google",
 });
 
 export const metadata: Metadata = {
@@ -41,7 +51,7 @@ export default async function RootLayout({
 }>) {
   const theme = (await cookies()).get("theme")?.value;
   const htmlClassName =
-    theme === "dark" ? `${montserratFont.variable} dark` : montserratFont.variable;
+    theme === "dark" ? `${googleFont.variable} dark` : googleFont.variable;
 
   return (
     <html

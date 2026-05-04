@@ -36,7 +36,7 @@ export function DarkBtn() {
     >
       {theme === 'dark'
         ? <MdLightMode className="text-blue-400 text-2xl md:text-4xl cursor-pointer" />
-        : <MdDarkMode className="text-black text-2xl md:text-4xl cursor-pointer" />
+        : <MdDarkMode className="text-blue-400 text-2xl md:text-4xl cursor-pointer" />
       }
     </button>
   )
