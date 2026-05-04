@@ -16,7 +16,7 @@ export function About() {
     <section id="about">
       <CustomContainer>
       <SectionTitle>About</SectionTitle>
-      <div className=" text-md md:text-xl leading-relaxed w-full rounded-b-4xl rounded-tr-4xl rounded-tl-sm bg-white dark:bg-gray-800 drop-shadow-md p-4">
+      <div className=" text-md md:text-lg leading-relaxed w-full rounded-b-4xl rounded-tr-4xl rounded-tl-sm bg-white dark:bg-gray-800 drop-shadow-md p-4">
         <p>Hi there!</p>
         <p>
           I am Karan Das, a B.Sc. IT graduate and frontend developer with 5+ years of experience building scalable, high-performance web applications using React.js and Next.js. I specialize in SSR, API integration, and performance optimization, with a strong track record of delivering production-grade platforms focused on speed, SEO, and a seamless user experience.
@@ -24,7 +24,7 @@ export function About() {
         <div className="flex flex-wrap items-center gap-2 mt-4">
           <span>Key skills:</span>
           {keySkills.map((skill) => (
-            <span key={skill} className="bg-blue-400 font-medium text-white px-2 py-0 text-lg rounded-full">
+            <span key={skill} className="bg-blue-400 font-medium text-white px-2 py-0.5 text-sm rounded-full">
               {skill}
             </span>
           ))}

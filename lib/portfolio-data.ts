@@ -54,20 +54,20 @@ export const skills: Skill[] = [
 
 export const education: TimelineItem[] = [
   {
-    title: "B.Sc.",
-    subtitle: "(Information Technology)",
+    title: "B.Sc.IT",
+    subtitle: "University of Mumbai",
     place: "Shankar Narayan College",
     date: "April 2019",
   },
   {
     title: "H.S.C.",
-    subtitle: "(Maharashtra State Board)",
+    subtitle: "Maharashtra State Board",
     place: "Mother Mary's Jr. College",
     date: "February 2016",
   },
   {
     title: "S.S.C.",
-    subtitle: "(Maharashtra State Board)",
+    subtitle: "Maharashtra State Board",
     place: "The Saraswati Vidyalaya",
     date: "March 2014",
   },
