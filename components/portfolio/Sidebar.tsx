@@ -10,7 +10,7 @@ export function Sidebar() {
               key={item.id}
               href={`#${item.id}`}
             >
-              <span>{item.icon}</span>
+              {/* <span>{item.icon}</span> */}
               <span>{item.label}</span>
             </a>
           ))}

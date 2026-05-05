@@ -5,7 +5,7 @@ import { CustomContainer } from "./CustomContainer";
 
 export function Projects() {
   return (
-    <section id="work">
+    <section id="works">
       <CustomContainer>
         <SectionTitle>Work</SectionTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">

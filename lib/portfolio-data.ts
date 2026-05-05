@@ -1,7 +1,6 @@
 export type NavItem = {
   id: string;
   label: string;
-  icon: string;
 };
 
 export type Skill = {
@@ -27,13 +26,13 @@ export type TimelineItem = {
 };
 
 export const navItems: NavItem[] = [
-  { id: "home", label: "Home", icon: "H" },
-  { id: "about", label: "About", icon: "A" },
-  { id: "education", label: "Education", icon: "E" },
-  { id: "experience", label: "Experience", icon: "X" },
-  { id: "skills", label: "Skills", icon: "S" },
-  { id: "work", label: "Work", icon: "W" },
-  { id: "interests", label: "Interests", icon: "I" },
+  { id: "home", label: "Home"},
+  { id: "about", label: "About" },
+  { id: "education", label: "Education" },
+  { id: "experience", label: "Experience" },
+  { id: "skills", label: "Skills" },
+  { id: "works", label: "Work" },
+  { id: "interests", label: "Interests" },
 ];
 
 export const skills: Skill[] = [
