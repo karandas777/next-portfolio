@@ -2,15 +2,17 @@ import type { TimelineItem } from "@/lib/portfolio-data";
 import { education, experience } from "@/lib/portfolio-data";
 import { SectionTitle } from "./SectionTitle";
 import { CustomContainer } from "./CustomContainer";
-import { PiCertificate } from "react-icons/pi";
+import { PiBriefcase, PiCertificate } from "react-icons/pi";
 
-function TimelineCard({ item }: { item: TimelineItem }) {
+function TimelineCard({ item, exp }: { item: TimelineItem; exp?: boolean }) {
   return (
-    <article className="p-4 bg-white dark:bg-gray-800 rounded-xl drop-shadow-xl">
-      <div className="flex items-center gap-2 w-full mb-3">
-        <PiCertificate className="text-2xl text-blue-400" />
-        <p className="text-blue-400 text-xl md:text-2xl font-bold">{item.title}</p>
-        <p className="font-semibold text-sm ml-auto">{item.date}</p>
+    <article className="p-4 glass rounded-xl">
+      <div className="flex flex-wrap items-center gap-2 w-full mb-3">
+        {
+          exp ? <PiBriefcase className="text-2xl text-blue-400" /> : <PiCertificate className="text-2xl text-blue-400" />
+        }
+        <p className="text-xl md:text-2xl font-bold">{item.title}</p>
+        <p className={exp ? "font-semibold text-sm md:ml-auto w-full md:w-auto" : "font-semibold text-sm ml-auto"}>{item.date}</p>
       </div>
       
       <p>{item.place}</p>
@@ -37,12 +39,14 @@ export function Education() {
 export function Experience() {
   return (
     <section id="experience">
+      <CustomContainer>
       <SectionTitle>Experience</SectionTitle>
-      <div>
+      <div className="grid grid-cols-1 gap-6 pt-4">
         {experience.map((item) => (
-          <TimelineCard key={`${item.title}-${item.date}`} item={item} />
+          <TimelineCard exp={true} key={`${item.title}-${item.date}`} item={item} />
         ))}
       </div>
+      </CustomContainer>
     </section>
   );
 }

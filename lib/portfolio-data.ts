@@ -7,15 +7,16 @@ export type NavItem = {
 export type Skill = {
   name: string;
   level: number;
+  category: string;
 };
 
 export type Project = {
   title: string;
-  description: string;
   live: string;
   git?: string;
-  date: string;
   image: string;
+  type: string;
+  skills: string[];
 };
 
 export type TimelineItem = {
@@ -36,20 +37,26 @@ export const navItems: NavItem[] = [
 ];
 
 export const skills: Skill[] = [
-  { name: "ReactJS", level: 96 },
-  { name: "Javascript", level: 94 },
-  { name: "HTML", level: 94 },
-  { name: "CSS", level: 96 },
-  { name: "Bootstrap", level: 96 },
-  { name: "Redux", level: 80 },
-  { name: "ES6", level: 86 },
-  { name: "TypeScript", level: 70 },
-  { name: "NodeJS", level: 75 },
-  { name: "ExpressJS", level: 75 },
-  { name: "MongoDB", level: 75 },
-  { name: "NextJS", level: 60 },
-  { name: "Angular", level: 60 },
-  { name: "Firebase", level: 60 },
+  { name: "ReactJS", level: 96 , category: "Frontend"},
+  { name: "NextJS", level: 84 , category: "Frontend"},
+  { name: "Tailwind CSS", level: 74 , category: "Frontend"},
+  { name: "JS ES6+", level: 94 , category: "Frontend"},
+  { name: "HTML5", level: 94 , category: "Frontend"},
+  { name: "CSS3", level: 96 , category: "Frontend"},
+  { name: "Bootstrap", level: 96 , category: "Frontend"},
+  { name: "Jest & RTL", level: 85 , category: "Frontend"},
+  { name: "Redux", level: 80 , category: "Frontend"},
+  { name: "TypeScript", level: 70 , category: "Frontend"},
+  { name: "NodeJS", level: 75 , category: "Backend"},
+  { name: "ExpressJS", level: 75 , category: "Backend"},
+  { name: "MongoDB", level: 75 , category: "Database"},
+  { name: "Git", level: 80 , category: "Dev and AI Tools"},
+  { name: "ChatGPT", level: 85 , category: "Dev and AI Tools"},
+  { name: "OpenAI Codex", level: 80 , category: "Dev and AI Tools"},
+  { name: "WindSurf", level: 85 , category: "Dev and AI Tools"},
+  { name: "Copilot", level: 80 , category: "Dev and AI Tools"},
+  { name: "Figma Make", level: 70 , category: "Dev and AI Tools"},
+  { name: "Vercel v0", level: 70 , category: "Dev and AI Tools"},
 ];
 
 export const education: TimelineItem[] = [
@@ -77,122 +84,132 @@ export const experience: TimelineItem[] = [
   {
     title: "Techved Consulting",
     subtitle: "Frontend Developer",
-    date: "December 2020 - Present",
+    date: "December 2020 - April 2026",
   },
 ];
 
 export const projects: Project[] = [
   {
-    title: "Kotak General Insurance Website",
-    description:
-      "Developed the whole UI of the website using ReactJS and integrated APIs for functionality",
-    live: "https://www.kotakgeneral.com/",
-    date: "June 2022",
+    title: "Generali Central Life Insurance Website",
+    live: "https://www.generalicentrallife.com/",
+    image: "/portfolio/projects/gcli.JPG",
+    type:"Corporate Project",
+    skills: ["React", "NextJS", "SEO", "CMS", "Rest API"]
+  },
+  {
+    title: "Zurich Kotak General Insurance Website",
+    live: "https://www.zurichkotak.com/",
     image: "/portfolio/projects/kgi.JPG",
+    type:"Corporate Project",
+    skills: ["React", "NextJS", "SEO", "CMS", "Rest API"]
   },
   {
     title: "Techved Consulting Website",
-    description: "Developed new pages using HTML, CSS & Javascript",
     live: "https://www.techved.com/",
-    date: "January 2021",
     image: "/portfolio/projects/tvd.JPG",
+    type:"Corporate Project",
+    skills: ["React", "NextJS", "SEO", "CMS", "Rest API"]
+  },
+  {
+    title: "TechvedAI Website",
+    live: "https://www.techved.ai/",
+    image: "/portfolio/projects/tvdai.JPG",
+    type:"Corporate Project",
+    skills: ["React", "NextJS", "SEO", "CMS", "Rest API"]
   },
   {
     title: "ITC myClassmate App",
-    description:
-      "Developed the backend of the application using NodeJS, ExpressJS & MongoDB",
     live: "https://play.google.com/store/apps/details?id=com.XYZ.ITCClassMate",
-    date: "November 2021",
     image: "/portfolio/projects/itc.JPG",
+    type:"Corporate Project",
+    skills: ["NodeJS", "Express", "MongoDB"]
   },
   {
     title: "Unsplash Replica",
-    description: "Unsplash replica using ReactJS & Unsplash API",
     live: "https://imagenary.netlify.app/",
     git: "https://github.com/karandas777/imagenary",
-    date: "22nd October 2020",
     image: "/portfolio/projects/pro18.1.JPG",
+    type:"Personal Project",
+    skills: ["React", "Rest API"]
   },
   {
     title: "Recipe App",
-    description: "A recipe finder app created using ReactJS & EDAMAM Recipe API",
     live: "https://recipemaster.netlify.app/",
     git: "https://github.com/karandas777/recipe",
-    date: "October 2020",
     image: "/portfolio/projects/pro17.1.JPG",
+    type:"Personal Project",
+    skills: ["React", "Rest API"]
   },
   {
     title: "Youtube Replica",
-    description: "Youtube replica using ReactJS",
     live: "https://yt-lite.netlify.app/",
     git: "https://github.com/karandas777/yt-lite",
-    date: "September 2020",
     image: "/portfolio/projects/pro16.1.JPG",
+    type:"Personal Project",
+    skills: ["React", "Rest API"]
   },
   {
     title: "Weather App",
-    description: "A weather app created using ReactJS & Open Weather API",
     live: "https://dark-sky.netlify.app/",
     git: "https://github.com/karandas777/weather",
-    date: "August 2020",
     image: "/portfolio/projects/pro15.1.JPG",
+    type:"Personal Project",
+    skills: ["React", "Rest API"]
   },
   {
     title: "Budget Calculator",
-    description: "A budget calculator application created using ReactJS",
     live: "https://whats-my-budget.netlify.app/",
     git: "https://github.com/karandas777/Budget",
-    date: "August 2020",
     image: "/portfolio/projects/pro13.1.JPG",
+    type:"Personal Project",
+    skills: ["React"]
   },
   {
     title: "To-Do List",
-    description: "A to-do list application created using ReactJS",
     live: "https://w-todo.netlify.app/",
     git: "https://github.com/karandas777/To-Do",
-    date: "August 2020",
     image: "/portfolio/projects/pro12.1.JPG",
+    type:"Personal Project",
+    skills: ["React"]
   },
   {
     title: "Realtime Chatroom",
-    description: "A global chatroom created using ReactJS & Firebase Realtime DB",
     live: "https://chatbuddy.netlify.app/",
     git: "https://github.com/karandas777/Chatroom",
-    date: "July 2020",
     image: "/portfolio/projects/pro10.1.JPG",
+    type:"Personal Project",
+    skills: ["React", "Firebase", "Realtime Database"]
   },
   {
     title: "Dogs Gallery",
-    description:
-      "Explore various breeds and a wide range of images, using ReactJS & Dogs API",
     live: "https://doggstagram.netlify.app/",
     git: "https://github.com/karandas777/doggy",
-    date: "May 2020",
     image: "/portfolio/projects/pro6.1.JPG",
+    type:"Personal Project",
+    skills: ["React", "Rest API"]
   },
   {
     title: "IMDB Replica",
-    description:
-      "Replica of popular movie review site IMDB, using ReactJS & MoviesDB API",
     live: "https://imdb2020.netlify.app/",
     git: "https://github.com/karandas777/imdb",
-    date: "February 2020",
     image: "/portfolio/projects/pro5.1.JPG",
+    type:"Personal Project",
+    skills: ["React", "Rest API"]
   },
   {
     title: "Business Homepage",
-    description: "A demo homepage using HTML, Bootstrap & Javascript",
     live: "https://zombiz-98.netlify.app/",
     git: "https://github.com/karandas777/Zombiz",
-    date: "August 2019",
     image: "/portfolio/projects/pro2.1.JPG",
+    type:"Personal Project",
+    skills: ["HTML", "CSS", "JavaScript"]
   },
   {
     title: "Restaurant Homepage",
-    description: "A single page design using HTML & CSS",
     live: "https://italian-res.netlify.app",
     git: "https://github.com/karandas777/Italian-Restaurant",
-    date: "June 2019",
     image: "/portfolio/projects/pro1.1.JPG",
+    type:"Personal Project",
+    skills: ["HTML", "CSS", "JavaScript"]
   },
 ];

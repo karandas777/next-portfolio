@@ -9,17 +9,17 @@ import { DarkBtn } from "./DarkBtn";
 
 export function PortfolioPage() {
   return (
-    <div className="bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300">
+    <div className="text-gray-700 dark:text-gray-300">
       {/* <Sidebar /> */}
       <DarkBtn />
       <main>
         <Hero />
         <About />
         <Education />
-        {/* <Experience />
+        <Experience />
         <Skills />
         <Projects />
-        <Interests /> */}
+        <Interests />
       </main>
     </div>
   );

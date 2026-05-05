@@ -1,15 +1,15 @@
 import { SectionTitle } from "./SectionTitle";
+import { CustomContainer } from "./CustomContainer";
 
 export function Interests() {
   return (
     <section id="interests">
-      <SectionTitle>Interests</SectionTitle>
-      <div>
-        Apart from being a developer, I enjoy most of my time outdoors cycling
-        and playing football. When indoors, I follow movies and television
-        shows, explore the latest technologies, and generally keep my inner
-        tech geek well fed.
-      </div>
+      <CustomContainer>
+        <SectionTitle>Interests</SectionTitle>
+        <div className=" text-lg md:text-2xl leading-relaxed w-full rounded-b-4xl rounded-tr-4xl rounded-tl-sm glass p-4">
+          Apart from being a developer, I enjoy watching movies and series, exploring new technologies, casually playing games, and keeping my inner tech enthusiast constantly engaged.
+        </div>
+      </CustomContainer>
     </section>
   );
 }

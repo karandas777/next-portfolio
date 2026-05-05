@@ -65,7 +65,12 @@ export default async function RootLayout({
           dangerouslySetInnerHTML={{ __html: themeInitScript }}
         />
       </head>
-      <body>{children}</body>
+      <body className="h-screen relative
+     transition-colors duration-300 ">
+        <div className="aurora-bg h-screen fixed inset-0 -z-10">
+        </div>
+          {children}
+      </body>
     </html>
   );
 }

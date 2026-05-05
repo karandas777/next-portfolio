@@ -6,29 +6,29 @@ export function Hero() {
   return (
     <section id="home">
       <CustomContainer>
-        <div className="flex items-center justify-center flex-col md:flex-row">
+        <div className="flex items-center justify-center flex-row">
           <Image
             src="/portfolio/profile.png"
             alt="Karan Das"
             width={160}
             height={160}
             priority
-            className="aspect-square w-30 h-30 md:w-40 md:h-40 drop-shadow-lg object-cover object-top rounded-full border-2 border-blue-400"
+            className="aspect-square w-20 h-20 sm:w-24 sm:h-24 md:w-40 md:h-40 drop-shadow-lg object-cover object-top rounded-full"
           />
-          <div className="ml-0 mt-6 text-center md:ml-8 md:mt-0 md:text-left">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-blue-400">Karan Das</h1>
+          <div className="ml-3 md:ml-8 text-left">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-blue-400 mr-4">Karan Das</h1>
             {/* <div className="w-full h-1 bg-blue-400 rounded-full mt-4" /> */}
-            <p className="text-xl md:text-2xl mt-3 flex items-center gap-2"><PiCodeBold className="text-blue-400 text-xl md:text-2xl" /> Frontend Developer</p>
+            <p className="text-md md:text-2xl mt-1 md:mt-3  flex items-center gap-2">Frontend Developer</p>
           </div>
         </div>
 
-        <div className="mt-6 md:mt-10 font-medium">
-          <div className="flex mb-6 flex-wrap gap-4 md:gap-6 lg:gap-10 w-full items-center justify-center text-md md:text-lg">
+        <div className="mt-10 md:mt-16 font-medium">
+          <div className="flex mb-6 flex-wrap flex-col md:flex-row gap-4 md:gap-6 lg:gap-10 w-full items-center justify-center text-md md:text-lg">
 
-            <a href="tel:+918828492119" className="flex items-center gap-2">
+            <a href="tel:+918828492119" className="flex items-center gap-2 glass px-3 py-1 rounded-full">
               <PiPhoneCallFill className="text-blue-400 text-xl md:text-2xl" /> +91 8828492119
             </a>
-            <a href="mailto:karandas.21.08.98@gmail.com" className="flex items-center gap-2">
+            <a href="mailto:karandas.21.08.98@gmail.com" className="flex items-center gap-2 glass px-3 py-1 rounded-full">
               <PiEnvelopeFill className="text-blue-400 text-xl md:text-2xl" /> karandas.21.08.98@gmail.com
             </a>
 
@@ -36,15 +36,15 @@ export function Hero() {
           </div>
           <div className="flex flex-wrap gap-4 md:gap-6 lg:gap-10 w-full items-center justify-center text-md md:text-lg">
 
-            <a href="https://github.com/karandas777" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            <a href="https://github.com/karandas777" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 glass px-3 py-1 rounded-full">
               <PiGithubLogoFill className="text-blue-400 text-xl md:text-2xl" /> Github
             </a>
-            <a href="https://www.linkedin.com/in/karan-das-0046a9183" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            <a href="https://www.linkedin.com/in/karan-das-0046a9183" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 glass px-3 py-1 rounded-full">
               <PiLinkedinLogoFill className="text-blue-400 text-xl md:text-2xl" /> LinkedIn
             </a>
 
           </div>
-          <p className="text-md md:text-lg lg:text-2xl mt-10 font-bold flex items-center gap-3 justify-center"><PiMapPinFill className="text-blue-400 text-xl md:text-2xl" /> Mumbai, India - 401105</p>
+          <p className="text-md md:text-lg lg:text-2xl mt-16 font-bold flex items-center gap-3 justify-center "><PiMapPinFill className="text-blue-400 text-xl md:text-2xl" /> Mumbai, India - 401105</p>
         </div>
 
       </CustomContainer>
