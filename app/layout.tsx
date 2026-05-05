@@ -32,7 +32,7 @@ const googleFont = localFont({
 export const metadata: Metadata = {
   title: "Karan Das | Frontend Developer",
   description:
-    "Portfolio of Karan Das, a frontend developer specializing in React, Next.js, TypeScript, and responsive UI.",
+    "Frontend developer specializing in React, Next.js, and responsive UI.",
 };
 
 const themeInitScript = `
