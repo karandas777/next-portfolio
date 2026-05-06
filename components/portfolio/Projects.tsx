@@ -15,7 +15,7 @@ export function Projects() {
               href={project.live}
               target="_blank"
               rel="noreferrer"
-              className="p-2 md:p-3 glass rounded-xl"
+              className="p-3 md:p-4 glass rounded-3xl"
             >
               <div className="relative">
                 <Image
@@ -23,9 +23,9 @@ export function Projects() {
                   alt={`${project.title} screenshot`}
                   width={500}
                   height={250}
-                  className="w-full h-full object-cover rounded"
+                  className="w-full h-full object-cover rounded-xl"
                 />
-                <div className="absolute top-1 text-xs right-1 backdrop-blur-sm font-medium bg-black/30 text-white px-2 py-1 rounded">
+                <div className="absolute top-1 text-xs right-1 backdrop-blur-sm font-medium bg-black/30 text-white px-2 py-1 rounded-xl">
                   {project.type}
                 </div>
               </div>
@@ -33,7 +33,7 @@ export function Projects() {
               {project.skills && (
                 <div className="flex flex-wrap gap-2 mt-2">
                   {project.skills.map((skill) => (
-                    <span key={skill} className="text-xs glass px-2 py-1 rounded">
+                    <span key={skill} className="text-xs glass px-2 py-1 rounded-xl">
                       {skill}
                     </span>
                   ))}

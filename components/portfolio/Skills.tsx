@@ -26,11 +26,11 @@ export function Skills() {
               </h2>
 
               {/* Grid for that category */}
-              <div className={items.length < 5 ? "grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-6" : "grid grid-cols-2 lg:grid-cols-4 gap-6"}>
+              <div className={items.length < 5 ? "grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6" : "grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"}>
                 {items.map((skill) => (
                   <article
                     key={skill.name}
-                    className="p-3 md:p-4 glass rounded-xl"
+                    className="p-3 md:p-4 glass rounded-2xl"
                   >
                     <h3 className="font-bold text-sm md:text-lg">{skill.name}</h3>
 

@@ -6,7 +6,7 @@ import { PiBriefcase, PiCertificate } from "react-icons/pi";
 
 function TimelineCard({ item, exp }: { item: TimelineItem; exp?: boolean }) {
   return (
-    <article className="p-4 glass rounded-xl">
+    <article className="p-4 glass rounded-3xl">
       <div className="flex flex-wrap items-center gap-2 w-full mb-3">
         {
           exp ? <PiBriefcase className="text-2xl text-blue-400" /> : <PiCertificate className="text-2xl text-blue-400" />
@@ -26,7 +26,7 @@ export function Education() {
     <section id="education">
       <CustomContainer>
       <SectionTitle>Education</SectionTitle>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 pt-4">
         {education.map((item) => (
           <TimelineCard key={`${item.title}-${item.date}`} item={item} />
         ))}
@@ -41,7 +41,7 @@ export function Experience() {
     <section id="experience">
       <CustomContainer>
       <SectionTitle>Experience</SectionTitle>
-      <div className="grid grid-cols-1 gap-6 pt-4">
+      <div className="grid grid-cols-1 gap-4 md:gap-6 pt-4">
         {experience.map((item) => (
           <TimelineCard exp={true} key={`${item.title}-${item.date}`} item={item} />
         ))}
