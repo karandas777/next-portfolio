@@ -25,10 +25,10 @@ export function Hero() {
         <div className="mt-8 md:mt-16 font-medium">
           <div className="flex mb-6 flex-wrap flex-col md:flex-row gap-6 lg:gap-10 w-full items-center justify-center text-md md:text-lg">
 
-            <a href="tel:+918828492119" className="flex items-center gap-2 glass px-3 py-1 rounded-full">
+            <a href="tel:+918828492119" className="flex items-center gap-2 glass px-3 py-1 rounded-full hover:scale-97 hover:shadow-lg transition-all duration-300">
               <PiPhoneCallBold className="text-blue-400 text-xl md:text-2xl" /> +91 8828492119
             </a>
-            <a href="mailto:karandas.21.08.98@gmail.com" className="flex items-center gap-2 glass px-3 py-1 rounded-full">
+            <a href="mailto:karandas.21.08.98@gmail.com" className="flex items-center gap-2 glass px-3 py-1 rounded-full hover:scale-97 hover:shadow-lg transition-all duration-300">
               <PiEnvelopeBold className="text-blue-400 text-xl md:text-2xl" /> karandas.21.08.98@gmail.com
             </a>
 
@@ -36,10 +36,10 @@ export function Hero() {
           </div>
           <div className="flex flex-wrap gap-6 lg:gap-10 w-full items-center justify-center text-md md:text-lg">
 
-            <a href="https://github.com/karandas777" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 glass px-3 py-1 rounded-full">
+            <a href="https://github.com/karandas777" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 glass px-3 py-1 rounded-full hover:scale-97 hover:shadow-lg transition-all duration-300">
               <PiGithubLogoBold className="text-blue-400 text-xl md:text-2xl" /> Github
             </a>
-            <a href="https://www.linkedin.com/in/karan-das-0046a9183" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 glass px-3 py-1 rounded-full">
+            <a href="https://www.linkedin.com/in/karan-das-0046a9183" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 glass px-3 py-1 rounded-full hover:scale-97 hover:shadow-lg transition-all duration-300">
               <PiLinkedinLogoBold className="text-blue-400 text-xl md:text-2xl" /> LinkedIn
             </a>
 

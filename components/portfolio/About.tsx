@@ -34,7 +34,7 @@ export function About() {
       <a
           href="/portfolio/Resume.pdf"
           download
-          className="mt-6 md:mt-10 drop-shadow-xl text-white font-bold mx-auto px-4 py-2 rounded-3xl w-fit flex items-center gap-3 justify-center text-sm md:text-lg bg-blue-400 "
+          className="mt-6 md:mt-10 drop-shadow-xl text-white font-bold mx-auto px-4 py-2 rounded-3xl w-fit flex items-center gap-3 justify-center text-sm md:text-lg bg-blue-400 hover:scale-97 hover:bg-blue-500 transition-all duration-300"
         >
           <PiDownloadSimpleBold className="text-xl md:text-2xl" /> Download My Resume
         </a>

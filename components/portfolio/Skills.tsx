@@ -30,7 +30,7 @@ export function Skills() {
                 {items.map((skill) => (
                   <article
                     key={skill.name}
-                    className="p-3 md:p-4 glass rounded-2xl"
+                    className="p-3 md:p-4 glass rounded-2xl hover:scale-97 hover:shadow-lg transition-all duration-300"
                   >
                     <h3 className="font-bold text-sm md:text-lg">{skill.name}</h3>
 

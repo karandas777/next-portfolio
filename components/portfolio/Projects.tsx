@@ -15,7 +15,7 @@ export function Projects() {
               href={project.live}
               target="_blank"
               rel="noreferrer"
-              className="p-3 md:p-4 glass rounded-3xl"
+              className="p-3 md:p-4 glass rounded-3xl hover:scale-97 hover:shadow-lg transition-all duration-300"
             >
               <div className="relative">
                 <Image
