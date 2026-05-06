@@ -12,9 +12,9 @@ export function DarkBtn() {
   const [theme, setTheme] = useState('light')
   const [mounted, setMounted] = useState(false)
   const [expanded, setExpanded] = useState(false)
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState<any>('')
 
-  const timeoutRef = useRef(null)
+  const timeoutRef = useRef<any>(null)
 
   // Initial theme setup
   useEffect(() => {
