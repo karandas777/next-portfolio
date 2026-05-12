@@ -16,7 +16,7 @@ export function PortfolioPage() {
         <Hero />
         <About />
         <Education />
-        <Experience />
+        {/* <Experience /> */}
         <Skills />
         <Projects />
         <Interests />

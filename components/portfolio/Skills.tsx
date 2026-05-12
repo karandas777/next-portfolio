@@ -16,32 +16,38 @@ export function Skills() {
     <section id="skills">
       <CustomContainer>
         <SectionTitle>Skills</SectionTitle>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8 glass rounded-2xl p-4">
           {Object.entries(groupedSkills).map(([category, items]) => (
-            <div key={category} className={`${items.length < 5 ? 'col-span-2 md:col-span-1' : 'col-span-2'}`}>
+            <div key={category} className="col-span-1">
 
               {/* Category Title */}
-              <h2 className="text-lg md:text-2xl font-bold mb-4">
-                {category}
-              </h2>
+                <h2 className="text-md md:text-xl font-bold mb-4">
+                  {category}
+                </h2>
 
               {/* Grid for that category */}
-              <div className={items.length < 5 ? "grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6" : "grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"}>
-                {items.map((skill) => (
+              <div className="flex flex-wrap gap-3 md:gap-4">
+                
+                {items.map((skill) => {
+                  const Icon = skill.icon
+                  return (
                   <article
                     key={skill.name}
-                    className="p-3 md:p-4 glass rounded-2xl hover:scale-97 hover:shadow-lg transition-all duration-300"
+                    className="px-3 md:px-4 py-1 md:py-2 glass rounded-2xl hover:scale-97 hover:shadow-lg transition-all duration-300"
                   >
-                    <h3 className="font-bold text-sm md:text-lg">{skill.name}</h3>
-
-                    <div className="bg-gray-200 dark:bg-gray-700 rounded-full h-1 mt-2">
+                    <h3 className="font-bold text-sm md:text-lg flex items-center">
+                      {Icon && <Icon className="text-md md:text-3xl text-blue-400 mr-2" />}
+                      {skill.name}
+                    </h3>
+                    {/* <div className="bg-gray-200 dark:bg-gray-700 rounded-full h-1 mt-2">
                       <div
                         className="bg-blue-400 h-1 rounded-full"
                         style={{ width: `${skill.level}%` }}
                       />
-                    </div>
+                    </div> */}
                   </article>
-                ))}
+                  )
+                })}
               </div>
             </div>
           ))}

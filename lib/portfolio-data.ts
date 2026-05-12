@@ -1,3 +1,9 @@
+import { FaBitbucket, FaBootstrap, FaCss3Alt, FaFigma, FaGithub, FaHtml5, FaJira, FaJs, FaNodeJs, FaReact } from "react-icons/fa"
+import { GoCopilot } from "react-icons/go";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { SiExpress, SiJest, SiMongodb, SiOpenai, SiPostman, SiRedux, SiStrapi, SiTestinglibrary, SiTypescript, SiVercel, SiWindsurf } from "react-icons/si";
+import { VscAzureDevops, VscVscode } from "react-icons/vsc";
+
 export type NavItem = {
   id: string;
   label: string;
@@ -7,6 +13,7 @@ export type Skill = {
   name: string;
   level: number;
   category: string;
+  icon?: React.ElementType;
 };
 
 export type Project = {
@@ -36,26 +43,32 @@ export const navItems: NavItem[] = [
 ];
 
 export const skills: Skill[] = [
-  { name: "ReactJS", level: 96 , category: "Frontend"},
-  { name: "NextJS", level: 84 , category: "Frontend"},
-  { name: "Tailwind CSS", level: 74 , category: "Frontend"},
-  { name: "JS ES6+", level: 94 , category: "Frontend"},
-  { name: "HTML5", level: 94 , category: "Frontend"},
-  { name: "CSS3", level: 96 , category: "Frontend"},
-  { name: "Bootstrap", level: 96 , category: "Frontend"},
-  { name: "Jest & RTL", level: 85 , category: "Frontend"},
-  { name: "Redux", level: 80 , category: "Frontend"},
-  { name: "TypeScript", level: 70 , category: "Frontend"},
-  { name: "NodeJS", level: 75 , category: "Backend"},
-  { name: "ExpressJS", level: 75 , category: "Backend"},
-  { name: "MongoDB", level: 75 , category: "Database"},
-  { name: "Git", level: 80 , category: "Dev and AI Tools"},
-  { name: "ChatGPT", level: 85 , category: "Dev and AI Tools"},
-  { name: "OpenAI Codex", level: 80 , category: "Dev and AI Tools"},
-  { name: "WindSurf", level: 85 , category: "Dev and AI Tools"},
-  { name: "Copilot", level: 80 , category: "Dev and AI Tools"},
-  { name: "Figma Make", level: 70 , category: "Dev and AI Tools"},
-  { name: "Vercel v0", level: 70 , category: "Dev and AI Tools"},
+  { name: "ReactJS", level: 96 , category: "Frontend", icon : FaReact},
+  { name: "NextJS", level: 84 , category: "Frontend", icon : RiNextjsFill },
+  { name: "Tailwind", level: 74 , category: "Frontend", icon : RiTailwindCssFill },
+  { name: "JS ES6+", level: 94 , category: "Frontend", icon : FaJs },
+  { name: "HTML5", level: 94 , category: "Frontend", icon : FaHtml5 },
+  { name: "CSS3", level: 96 , category: "Frontend", icon : FaCss3Alt },
+  { name: "Bootstrap", level: 96 , category: "Frontend", icon : FaBootstrap },
+  { name: "Jest", level: 85 , category: "Frontend", icon : SiJest },
+  { name: "React Testing Library", level: 85 , category: "Frontend", icon : SiTestinglibrary },
+  { name: "Redux", level: 80 , category: "Frontend", icon : SiRedux },
+  { name: "TypeScript", level: 70 , category: "Frontend", icon : SiTypescript },
+  { name: "NodeJS", level: 75 , category: "Backend", icon : FaNodeJs },
+  { name: "ExpressJS", level: 75 , category: "Backend", icon : SiExpress},
+  { name: "MongoDB", level: 75 , category: "Backend", icon : SiMongodb },
+  { name: "Strapi CMS", level: 70 , category: "Backend", icon : SiStrapi  },
+  { name: "Github", level: 80 , category: "Dev Tools", icon : FaGithub },
+  { name: "Bitbucket", level: 80 , category: "Dev Tools", icon : FaBitbucket  },
+  { name: "Jira", level: 90 , category: "Dev Tools", icon : FaJira  },
+  { name: "Azure DevOps", level: 70 , category: "Dev Tools", icon : VscAzureDevops  },
+  { name: "VS Code", level: 70 , category: "Dev Tools", icon : VscVscode  },
+  { name: "Postman", level: 85 , category: "Dev Tools", icon : SiPostman },
+  { name: "ChatGPT / Codex", level: 85 , category: "AI Tools", icon : SiOpenai },
+  { name: "WindSurf", level: 85 , category: "AI Tools", icon : SiWindsurf },
+  { name: "Copilot", level: 80 , category: "AI Tools", icon : GoCopilot },
+  { name: "Figma Make", level: 70 , category: "AI Tools", icon : FaFigma },
+  { name: "Vercel v0", level: 70 , category: "AI Tools", icon : SiVercel },
 ];
 
 export const education: TimelineItem[] = [
@@ -203,12 +216,12 @@ export const projects: Project[] = [
     type:"Personal Project",
     skills: ["HTML", "CSS", "JavaScript"]
   },
-  {
-    title: "Restaurant Homepage",
-    live: "https://italian-res.netlify.app",
-    git: "https://github.com/karandas777/Italian-Restaurant",
-    image: "/portfolio/projects/pro1.1.JPG",
-    type:"Personal Project",
-    skills: ["HTML", "CSS", "JavaScript"]
-  },
+  // {
+  //   title: "Restaurant Homepage",
+  //   live: "https://italian-res.netlify.app",
+  //   git: "https://github.com/karandas777/Italian-Restaurant",
+  //   image: "/portfolio/projects/pro1.1.JPG",
+  //   type:"Personal Project",
+  //   skills: ["HTML", "CSS", "JavaScript"]
+  // },
 ];
