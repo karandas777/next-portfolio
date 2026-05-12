@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const googleFont = localFont({
   src: [
@@ -69,7 +71,9 @@ export default async function RootLayout({
      transition-colors duration-300 ">
         <div className="aurora-bg h-screen fixed inset-0 -z-10">
         </div>
-          {children}
+        {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
