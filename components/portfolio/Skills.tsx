@@ -16,7 +16,7 @@ export function Skills() {
     <section id="skills">
       <CustomContainer>
         <SectionTitle>Skills</SectionTitle>
-        <div className="grid grid-cols-1 gap-8 glass rounded-2xl p-4">
+        <div className="grid grid-cols-1 gap-8">
           {Object.entries(groupedSkills).map(([category, items]) => (
             <div key={category} className="col-span-1">
 
@@ -33,10 +33,10 @@ export function Skills() {
                   return (
                   <article
                     key={skill.name}
-                    className="px-3 md:px-4 py-1 md:py-2 glass rounded-2xl hover:scale-97 hover:shadow-lg transition-all duration-300"
+                    className="px-2 md:px-4 py-2 glass rounded-xl md:rounded-2xl hover:scale-97 hover:shadow-lg transition-all duration-300"
                   >
                     <h3 className="font-bold text-sm md:text-lg flex items-center">
-                      {Icon && <Icon className="text-md md:text-3xl text-blue-400 mr-2" />}
+                      {Icon && <Icon className="text-lg md:text-3xl mr-1 md:mr-2" />}
                       {skill.name}
                     </h3>
                     {/* <div className="bg-gray-200 dark:bg-gray-700 rounded-full h-1 mt-2">
