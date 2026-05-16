@@ -99,6 +99,7 @@ export function DarkBtn() {
       {/* Toggle Button */}
       <button
         onClick={toggleTheme}
+        aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
         className="h-10 w-10 z-50 p-2 glass rounded-full cursor-pointer fixed top-3 right-3 md:top-6 md:right-6 flex items-center justify-center"
       >
         {theme === 'dark'

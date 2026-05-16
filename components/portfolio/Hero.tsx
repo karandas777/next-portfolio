@@ -13,6 +13,7 @@ export function Hero() {
             width={160}
             height={160}
             priority
+            loading="eager"
             className="aspect-square w-24 h-24 md:w-40 md:h-40 drop-shadow-lg object-cover object-top rounded-full"
           />
           <div className="ml-0 md:ml-8 mt-4 md:mt-0 text-center md:text-left">
