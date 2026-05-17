@@ -33,9 +33,11 @@ const googleFont = localFont({
 
 export const metadata: Metadata = {
   title: "Karan Das | Frontend Developer",
-  description:
-    "Frontend developer specializing in React, Next.js, and responsive UI.",
+  description: "Frontend developer specializing in React, Next.js, and responsive UI.",
   keywords: ["Karan Das", "Frontend Developer", "React", "Next.js", "UI Developer"],
+  icons: {
+    icon: "/favicon.ico",
+  },
   verification: {
     google: "5pYJMt4B2TkongmsLmhJhFubAnVF-JDgVHJJBflR_9M",
   },
