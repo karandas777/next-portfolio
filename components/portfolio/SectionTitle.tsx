@@ -5,8 +5,8 @@ type SectionTitleProps = {
 export function SectionTitle({ children }: SectionTitleProps) {
   return (
     <div className="w-full mb-5 text-left">
-      <h2 className="text-3xl md:text-4xl font-bold text-blue-400">{children}</h2>
-      {/* <div className="w-full h-1 dark:bg-white bg-gray-900 rounded-full mt-4" /> */}
+      <h2 className="text-2xl md:text-4xl font-bold">{children}</h2>
+      {/* <div className="w-50 h-3 glass rounded-full mt-4" /> */}
     </div>
   );
 }

@@ -6,17 +6,19 @@ import { PiBriefcase, PiCertificate } from "react-icons/pi";
 
 function TimelineCard({ item, exp }: { item: TimelineItem; exp?: boolean }) {
   return (
-    <article className="p-4 glass rounded-3xl hover:scale-97 hover:shadow-lg transition-all duration-300">
+    <article className="p-3 md:p-4 glass rounded-3xl">
       <div className="flex flex-wrap items-center gap-2 w-full mb-3">
+        <span className="p-2 glass rounded-4xl">
         {
-          exp ? <PiBriefcase className="text-2xl text-blue-400" /> : <PiCertificate className="text-2xl text-blue-400" />
+          exp ? <PiBriefcase className="text-lg md:text-2xl" /> : <PiCertificate className="text-lg md:text-2xl" />
         }
+        </span>
         <p className="text-xl md:text-2xl font-bold">{item.title}</p>
         <p className={exp ? "font-semibold text-sm md:ml-auto w-full md:w-auto" : "font-semibold text-sm ml-auto"}>{item.date}</p>
       </div>
       
-      <p>{item.place}</p>
-      <p>{"( " + item.subtitle + " )"}</p>
+      <p className="text-sm md:text-base">{item.place}</p>
+      <p className="text-sm md:text-base">{"( " + item.subtitle + " )"}</p>
     </article>
   );
 }

@@ -103,8 +103,8 @@ export function DarkBtn() {
         className="h-10 w-10 z-50 p-2 glass rounded-full cursor-pointer fixed top-3 right-3 md:top-6 md:right-6 flex items-center justify-center"
       >
         {theme === 'dark'
-          ? <MdLightMode className="text-blue-400 text-2xl md:text-3xl" />
-          : <MdDarkMode className="text-blue-400 text-2xl md:text-3xl" />
+          ? <MdLightMode className="text-2xl md:text-3xl" />
+          : <MdDarkMode className="text-2xl md:text-3xl" />
         }
       </button>
     </>

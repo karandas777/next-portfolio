@@ -21,22 +21,22 @@ export function Skills() {
             <div key={category} className="col-span-1">
 
               {/* Category Title */}
-                <h2 className="text-md md:text-xl font-bold mb-4">
+                <h2 className="text-md md:text-xl text-center font-bold mb-4">
                   {category}
                 </h2>
 
               {/* Grid for that category */}
-              <div className="flex flex-wrap gap-3 md:gap-4">
+              <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-4">
                 
                 {items.map((skill) => {
                   const Icon = skill.icon
                   return (
                   <article
                     key={skill.name}
-                    className="px-2 md:px-4 py-2 glass rounded-xl md:rounded-2xl hover:scale-97 hover:shadow-lg transition-all duration-300"
+                    className="px-2 md:px-4 py-2 glass rounded-xl md:rounded-2xl"
                   >
-                    <h3 className="font-bold text-sm md:text-lg flex items-center">
-                      {Icon && <Icon className="text-lg md:text-3xl mr-1 md:mr-2" />}
+                    <h3 className="font-bold text-xs md:text-lg flex items-center">
+                      {Icon && <Icon className="text-lg md:text-xl mr-1 md:mr-2" />}
                       {skill.name}
                     </h3>
                     {/* <div className="bg-gray-200 dark:bg-gray-700 rounded-full h-1 mt-2">

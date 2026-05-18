@@ -6,10 +6,11 @@ import { Projects } from "./Projects";
 import { Sidebar } from "./Sidebar";
 import { Skills } from "./Skills";
 import { DarkBtn } from "./DarkBtn";
+import GetInTouch from "./GetInTouch";
 
 export function PortfolioPage() {
   return (
-    <div className="text-gray-700 dark:text-gray-300">
+    <div className="text-gray-800 dark:text-gray-300">
       {/* <Sidebar /> */}
       <DarkBtn />
       <main>
@@ -19,7 +20,8 @@ export function PortfolioPage() {
         {/* <Experience /> */}
         <Skills />
         <Projects />
-        <Interests />
+        {/* <Interests /> */}
+        <GetInTouch/>
       </main>
     </div>
   );

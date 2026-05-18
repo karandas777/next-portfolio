@@ -6,7 +6,7 @@ export function Interests() {
     <section id="interests">
       <CustomContainer>
         <SectionTitle>Interests</SectionTitle>
-        <div className=" text-lg md:text-xl leading-relaxed w-full rounded-b-4xl rounded-tr-4xl rounded-tl-sm glass p-4">
+        <div className=" text-sm md:text-lg leading-relaxed w-full rounded-b-4xl rounded-tr-4xl rounded-tl-sm glass p-4">
           Apart from being a developer, I enjoy watching movies and series, exploring new technologies, casually playing games, and keeping my inner tech enthusiast constantly engaged.
         </div>
       </CustomContainer>

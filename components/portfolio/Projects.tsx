@@ -29,11 +29,11 @@ export function Projects() {
                   {project.type}
                 </div>
               </div>
-              <h3 className="font-medium mt-3">{project.title}</h3>
+              <h3 className="font-medium mt-3 text-sm md:text-base">{project.title}</h3>
               {project.skills && (
                 <div className="flex flex-wrap gap-2 mt-2">
                   {project.skills.map((skill) => (
-                    <span key={skill} className="text-xs glass px-2 py-1 rounded-xl">
+                    <span key={skill} className="text-xs glass px-1.5 py-0.5 rounded-xl">
                       {skill}
                     </span>
                   ))}
