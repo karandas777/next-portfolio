@@ -14,11 +14,11 @@ function TimelineCard({ item, exp }: { item: TimelineItem; exp?: boolean }) {
         }
         </span>
         <p className="text-xl md:text-2xl font-bold">{item.title}</p>
-        <p className={exp ? "font-semibold text-sm md:ml-auto w-full md:w-auto" : "font-semibold text-sm ml-auto"}>{item.date}</p>
+        <p className={exp ? "font-semibold text-sm md:ml-auto w-full text-center md:w-auto" : "font-semibold text-sm ml-auto text-center"}>{item.date}</p>
       </div>
       
-      <p className="text-sm md:text-base">{item.place}</p>
-      <p className="text-sm md:text-base">{"( " + item.subtitle + " )"}</p>
+      <p className="text-sm md:text-base text-center">{item.place}</p>
+      <p className="text-sm md:text-base text-center">{"( " + item.subtitle + " )"}</p>
     </article>
   );
 }
